@@ -1,0 +1,15 @@
+{
+// Configure your Run and Preview buttons here.
+
+	// Run button configuration
+  "commands": {
+    "Variables": "~/workspace/.guides/restore.sh 01-variables",
+    "Play": "~/workspace/.guides/restore.sh 02-varplay"
+    
+  },
+  
+	// Preview button configuration
+  "preview": {
+        "Preview": "https://{{domain}}/{{index}}"
+  }
+}

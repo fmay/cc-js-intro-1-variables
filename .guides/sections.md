@@ -2,7 +2,7 @@
 title: INTRODUCTION TO JAVASCRIPT
 files: []
 editable: true
-layout: ""
+layout: 2-panels-tree
 
 ---
 We are now going to introduce you to Javascript. The way we are going to introduce Javascript to you is in three phases.

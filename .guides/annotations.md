@@ -444,15 +444,6 @@ There are some important things to note here
 
 
 
-@annotation:tour summary
-#Summary
-You now have grasped something basic but important. In the next module, we will move on to something much more interesting and practical that uses Javascript. 
-
-We will use Javascript to interact and even modify our HTML content.
-
-
-
-
 
 
 

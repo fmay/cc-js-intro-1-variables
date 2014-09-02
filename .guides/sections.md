@@ -57,7 +57,7 @@ Look at the `example.js` and let's see some variables in use.
 ```
 
 ##Creating variables
-Let's just look at the first 3 lines. We start off by defining 3 variables (width, height and circleColor) using `var` and then assign initial values to each of them (400, 300 and the color value #fff000).
+Let's just look at the first 3 lines. We start off by defining 3 variables (width, height and circleColor) using `var` and then assign initial values to each of them (400, 300 and the [color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Values) #fff000).
 
 You could have used more or less any name under the sun rather than width or height but it obviously makes sense to choose a name that relates to what it is being used for.
 

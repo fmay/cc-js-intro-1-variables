@@ -9,11 +9,15 @@ We are now going to introduce you to Javascript. The way we are going to introdu
 
 1. We are going to introduce the basics of Javascript in a fairly dry way but we will keep it short.
 1. With the basics we learnt in the first step, we are going to apply this to HTML web pages.
-1. In the 'DEEPER JS' courses, we will take a moew formal approach to learning Javascript and will look at the Javascript language in more detail.
+1. In the 'DEEPER JS' courses, we will take a more formal approach to learning Javascript and will look at the Javascript language in more detail.
 
 ---
 title: The Semi Colon
-files: []
+files:
+  - path: example.js
+    panel: 0
+    ref: ""
+    lineCount: 0
 editable: true
 layout: ""
 
@@ -29,13 +33,11 @@ editable: true
 layout: ""
 
 ---
-From the Rocket menu, select 'Variables' to load the code.
-
 Run a Preview and you'll see a circle drawn on a red background as some sound being played. This is all done using Javascript and we're going to see some variables in use here.
 
 Variables are one of the fundamental thing in any programming language. so let's figure out what they do and why.
 
-Open up `example.js` and let's see some variables in use.
+Look at the `example.js` and let's see some variables in use.
 
 ```
   // Create a canvas x=50 and y=10, 400 side and 300 high
@@ -55,7 +57,7 @@ Open up `example.js` and let's see some variables in use.
 ```
 
 ##Creating variables
-Let's just look at the first 3 lines. We start off by defining 3 variables (width, height and circleColor) using `var` and then assign initial values to each of them (400, 300 and the [color value]() #fff000).
+Let's just look at the first 3 lines. We start off by defining 3 variables (width, height and circleColor) using `var` and then assign initial values to each of them (400, 300 and the color value #fff000).
 
 You could have used more or less any name under the sun rather than width or height but it obviously makes sense to choose a name that relates to what it is being used for.
 
@@ -65,12 +67,12 @@ Your variable names ...
 - may *not* have spaces in the name (`box width` would be invalid)
 - may not have any special characters like !, @, £, $, %, ^, &, *, (, ) etc. Basically you should restrict names to upper or lower case characters
 - they may not *start* with a number but *may* contain numbers (`1color` is not valid, but `color1` is valid)
-- they may contain the '-' character (`color_1`, for example)
+- they may contain the '_' character (`color_1`, for example)
 
 ##Naming conventions
-There are a couple of variable naming conventions you can use. You should choose one andthen stick to it so you have consistency.
+There are a couple of variable naming conventions you can use. You should choose one and then stick to it so you have consistency.
 
-`circleColor` is the author's personal favorite, where the first word is lower case and the other words (if there are any) has their first character upper case.circleColor
+`circleColor` is the author's personal favorite, where the first word is lower case and the other words (if there are any) has their first character upper case.
 `circle_color` is also fairly popular
 
 
@@ -253,7 +255,7 @@ isCold = true;
 isCold = false;
 ```
 
-It's as simple as that. Programs are full of cases where you need to check whether something is true or false. We'll explor this in more detail in the next module.
+It's as simple as that. Programs are full of cases where you need to check whether something is true or false. We'll explore this in more detail in the next module.
 ---
 title: Constants
 files: []
@@ -269,7 +271,7 @@ const pi=3.141;
 var area = pi*radius*radius;
 ```
 
-Above we have both a variable and a constant. The variable `x` can be modified by code statements afetr it has been defined.
+Above we have both a variable and a constant. The variable `x` can be modified by code statements after it has been defined.
 
 A constant cannot ever be modified once it has been defined. Pi is obviously a constant value and would never be modified.
 
@@ -282,7 +284,7 @@ editable: false
 layout: ""
 
 ---
-From the Rocket menu at the top, select 'Playing with Variables'. This will give you a very basic pair of files to experiment with.
+From the ![](.guides/img/rocket.png) Rocket menu at the top, select 'Playing with Variables'. This will give you a very basic pair of files to experiment with.
 
 Don't worry about `index.html`, just look at `example.js` and start playing with it. If you mess things up just select `Playing with Variables` again from the Rocket menu.
 
@@ -298,7 +300,7 @@ In our default examples, you will notice that the content you write to the *docu
 
 You can see how we can include any valid HTML we wish and it applies exactly as it would had it been written inside an HTML file such as `index.html`.
 
-Remembering the earlier CSS modules, it should be clear that you could the style your output in the same way using a CSS file. If you want to try this, you could add a `main.css` and then link to it by adding the following line to the <head> section of `index.html`.
+Remembering the earlier CSS modules, it should be clear that you could style your output in the same way using a CSS file. If you want to try this, you could add a `main.css` and then link to it by adding the following line to the <head> section of `index.html`.
 
 ```
   <link rel="stylesheet" type="text/css" href="./main.css">

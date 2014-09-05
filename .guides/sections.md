@@ -1,16 +1,13 @@
 ---
-title: INTRODUCTION TO JAVASCRIPT
+title: "VARIABLES & CONSTANTS"
 files: []
 editable: true
 layout: 2-panels-tree
 
 ---
-We are now going to introduce you to Javascript. The way we are going to introduce Javascript to you is in three phases.
+Introducing variables and constants is usually the first thing you learn in any programming language.
 
-1. We are going to introduce the basics of Javascript in a fairly dry way but we will keep it short.
-1. With the basics we learnt in the first step, we are going to apply this to HTML web pages.
-1. In the 'DEEPER JS' courses, we will take a more formal approach to learning Javascript and will look at the Javascript language in more detail.
-
+It may feel a bit dry but we'll build up to some fun stuff, so persevere.
 ---
 title: The Semi Colon
 files:
@@ -22,20 +19,20 @@ editable: true
 layout: ""
 
 ---
-One thing you will notice in `example.js` is that javascript statements end the line with a `;` character. We will go into this in more detail another time, but for now follow these guidelines
+One thing you will notice in `example.js`, which should be inthe left hand panel, is that javascript statements end the line with a `;` character. We will go into this in more detail another time, but for now follow these guidelines
 
 - use a semi-colon at the end of a line unless that line ends in a `{` character (a so called 'block' delimiter).
 
 ---
-title: "Variables & Constants"
+title: Variables in action
 files: []
 editable: true
 layout: ""
 
 ---
-Run a Preview and you'll see a circle drawn on a red background as some sound being played. This is all done using Javascript and we're going to see some variables in use here.
+Press 'Preview' (right most menu at the top) and you'll see a yellow circle drawn on a red background and hear a sound being played. This is all done using Javascript and we're going to see some variables in use here.
 
-Variables are one of the fundamental thing in any programming language. so let's figure out what they do and why.
+Variables are one of the fundamental things in any programming language. so let's figure out what they do and why.
 
 Look at the `example.js` and let's see some variables in use.
 
@@ -64,24 +61,33 @@ You could have used more or less any name under the sun rather than width or hei
 ##Choosing names for variables
 Your variable names ...
 
-- may *not* have spaces in the name (`box width` would be invalid)
-- may not have any special characters like !, @, £, $, %, ^, &, *, (, ) etc. Basically you should restrict names to upper or lower case characters
-- they may not *start* with a number but *may* contain numbers (`1color` is not valid, but `color1` is valid)
-- they may contain the '_' character (`color_1`, for example)
+- may *not* have spaces in the name (`box width` would be invalid).
+- may not have any special characters like !, @, £, $, %, ^, &, *, (, ) etc. 
+- Basically you should restrict names to upper or lower case characters and numbers.
+- they may not *start* with a number but *may* contain numbers (`1color` is not valid, but `color1` is valid).
+- they may contain the '_' character (`color_1`, for example).
 
 ##Naming conventions
 There are a couple of variable naming conventions you can use. You should choose one and then stick to it so you have consistency.
 
-`circleColor` is the author's personal favorite, where the first word is lower case and the other words (if there are any) has their first character upper case.
+`circleColor` is my personal favorite, where the first word is lower case and the other words (if there are any) have their first character upper cased.
 `circle_color` is also fairly popular
 
 
+
+---
+title: A bit more ...
+files: []
+editable: false
+layout: ""
+
+---
 ##Using variables
 Now look at the above code example again and look at where the variables `width` and `height` are actually used.
 
 You can see that they have been used 
 
-- to create the width and height of the drawing area canvas and 
+- to create the width and height of the drawing area canvas.
 - to create the rectangle we draw into the canvas.
 
 You can see that we have used our variable definitions here
@@ -89,7 +95,7 @@ You can see that we have used our variable definitions here
 var paper = Raphael(100, 50, width, height);
 ```
 
-We could just have easily have written this assign
+We could just have easily have written this as
 
 ```
 var paper = Raphael(100, 50, 400, 300);
@@ -98,10 +104,20 @@ var paper = Raphael(100, 50, 400, 300);
 However, you can see that the following thing we do also used the width and height
 
 ```
-  var rect = paper.rect(0, 0, width, height);
+var rect = paper.rect(0, 0, width, height);
 ```
 
 Now, imagine you wanted to change the width and the height. Rather than having to change both lines, or potentially lots of lines where width and height might be used, we can simply alter the variable and wherever that variable is used, those values will be applied.
+
+##Always declare variables with `var`
+It is very important that you declare your variables with `var`. You will discover that things still work if you use a variable without first declaring it, but this will create a *global* variable rather than a *local* variable. 
+
+We'll go into this in more detail in anotehr module, but a global variable can be used in any functions and keeps its value whereas a local variable only exists within the function you are in and will lose its data when the function temrinates.
+
+##Change some variable values
+Feel free to modify some of the variable values and see what effect it has. Once you have changed them, switch back to the Preview tab on the left, or press the Preview button again.
+
+If you mess things up, press the 'Variables' button again from the ![](.guides/img/rocket.png) Rocket menu and it will restore your code.
 ---
 title: Comments
 files: []
@@ -135,7 +151,7 @@ editable: false
 layout: ""
 
 ---
-Something else that you should religiously do, even thought it is not enforced in any way, is to *indent* your code. Good indentation makes your code far more readable.
+Something else that you should religiously do, even though it is not enforced in any way, is to *indent* your code. Good indentation makes your code far more readable.
 
 Here is an example of some badly formatted code
 
@@ -166,8 +182,9 @@ Variable arithmetic is easy to understand. Here are some simple examples. Note t
 ##Addition
 ```
 var x;
-x=100;
-x = x+x;
+var y=20;
+var z=30;
+x = y+z;
 ```
 
 ##Subtraction
@@ -263,7 +280,7 @@ editable: false
 layout: ""
 
 ---
-Constants are similar to variables but they have a specific purposes and are more restrictive.
+Constants are similar to variables but they have a specific purpose and are more restrictive.
 
 ```
 var radius=100;
@@ -284,7 +301,7 @@ editable: false
 layout: ""
 
 ---
-From the ![](.guides/img/rocket.png) Rocket menu at the top, select 'Playing with Variables'. This will give you a very basic pair of files to experiment with.
+From the ![](.guides/img/rocket.png) Rocket menu at the top, select 'Play'. This will give you a very basic pair of files to experiment with.
 
 Don't worry about `index.html`, just look at `example.js` and start playing with it. If you mess things up just select `Playing with Variables` again from the Rocket menu.
 
@@ -293,7 +310,16 @@ Go ahead a experiment with defining variables and performing some variable arith
 Add your own variables and expressions. Don't be timid about hacking the example around as much as you like.
 
 ##Display stuff in the Preview window
-To display things in the Preview window, you use the `document.write()` function. You put whatever it is you want to display inside the `()`. The initial code show this.
+To display text in the Preview window, you use the `document.write()` function. You put whatever it is you want to display inside the `()`.
+
+You will see, however, that *literal* text should be enclosed in single or double quotes. Look at `example.js` to see it in use (make sure you have selected 'Play' from the Rocket menu).
+
+Here you can see a mixture of literal text and a variable (`area`) combined.
+
+```js
+document.write("Area is " + area + "<br/>");
+```
+
 
 ##Writing to the 'Document' is HTML
 In our default examples, you will notice that the content you write to the *document* (the browser page) is nothing other than HTML. 

@@ -1,48 +1,45 @@
 /**
-* JS Examples
+* Created with cc-jsintro-1-intro.
 * User: fmay
 * Date: 2014-08-24
-* Time: 10:20 AM
+* Time: 09:41 PM
+* Playing with variables
 */
 
-function drawCircle() {
-    
-  // Create a canvas x=50 and y=10, 400 side and 300 high
-  var width=400;
-  var height=300;
-  var circleColor="#fff000";  
+function play() {
   
-  // Create a drawing area (canvas) at the screen coordinate (100,50)
-  var paper = Raphael(100, 50, width, height);
-  
-  // Draw a rectangle that fills the entire rectangle
-  var rect = paper.rect(0, 0, width, height);
-  
-  // Fill it with a color
-  rect.attr("fill", "#f00");
-  
-  // Creates circle at x = 100, y = 50, with radius=30
-  var circle = paper.circle(100, 50, 30);
+  var x=100;
+  var y=50;
+  var z;
 
-    
-  // Sets the fill attribute of the circle
-  circle.attr("fill", circleColor);
-
-  // Sets the stroke (border) attribute of the circle to black
-  circle.attr("stroke", "#000000");    
+  var myName="Freddy";
+	var wifeName='Jessica';
+	var gooeyString;
   
-};
-
-function playSound() {
+  // Note that '<br/>' is simply HTML for a new line
+  z = x*50;
+  document.write(z + "<br/>");
   
-  var freq1=480;
-  const duration=1000;
+  // String arithmetic and display
+	gooeyString=myName+' loves '+wifeName;  
+  document.write(gooeyString + "<br/>");
   
-  var sine1 = T("sin", {freq:freq1, mul:0.5});
-  var sine2 = T("sin", {freq:660, mul:0.5});
+  // String display showing how output is regular HTML
+  document.write("<h1>" + gooeyString + "</h1><br/>");
+  
+  // Calculate the areas of a circle
+  var radius=11;
+  const pi=3.141;
+  var area = pi*radius*radius;  
+	document.write("Area is " + area + "<br/>");
 
-  T("perc", {r:duration}, sine1, sine2).on("ended", function() {
-    this.pause();
-  }).bang().play();  
-
+  // Numeric arithmetic using parentheses
+  var someNumber = (x+y)*10;
+  document.write("First someNumber is : " + someNumber + "<br/>");
+  someNumber = x+y*10;
+  document.write("First someNumber is : " + someNumber + "<br/>");
+ 
+  
+ 
+  
 }

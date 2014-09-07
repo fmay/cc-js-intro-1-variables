@@ -3,8 +3,8 @@
 
 	// Run button configuration
   "commands": {
-    "Variables": "~/workspace/.guides/restore.sh 01-variables",
-    "Play": "~/workspace/.guides/restore.sh 02-varplay"
+    "Variables": "bash ~/workspace/.guides/restore.sh 01-variables",
+    "Play": "bash ~/workspace/.guides/restore.sh 02-varplay"
     
   },
   

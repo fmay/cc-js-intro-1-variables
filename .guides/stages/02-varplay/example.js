@@ -13,15 +13,15 @@ function play() {
   var z;
 
   var myName="Freddy";
-	var wifeName='Jessica';
-	var gooeyString;
+  var wifeName='Jessica';
+  var gooeyString;
   
   // Note that '<br/>' is simply HTML for a new line
   z = x*50;
   document.write(z + "<br/>");
   
   // String arithmetic and display
-	gooeyString=myName+' loves '+wifeName;  
+  gooeyString=myName+' loves '+wifeName;  
   document.write(gooeyString + "<br/>");
   
   // String display showing how output is regular HTML
@@ -31,7 +31,7 @@ function play() {
   var radius=11;
   const pi=3.141;
   var area = pi*radius*radius;  
-	document.write("Area is " + area + "<br/>");
+  document.write("Area is " + area + "<br/>");
 
   // Numeric arithmetic using parentheses
   var someNumber = (x+y)*10;

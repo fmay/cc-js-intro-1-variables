@@ -60,18 +60,23 @@ editable: true
 layout: ""
 
 ---
-One thing you will notice in `example.js`, which should be inthe left hand panel, is that javascript statements end the line with a `;` character. We will go into this in more detail another time, but for now follow these guidelines
+One thing you will notice in `example.js`, which should be in the left hand panel, is that javascript statements end the line with a `;` character. We will go into this in more detail another time, but for now follow these guidelines
 
 - use a semi-colon at the end of a line unless that line ends in a `{` character (a so called 'block' delimiter).
 
 ---
 title: Variables in action
-files: []
+files:
+  - path: example.js
+    action: open
+    panel: 0
+    ref: " // Create a canvas x=50 and y=10, 400 side and 300 high"
+    lineCount: 13
 editable: true
 layout: ""
 
 ---
-Press 'Preview' (right most menu at the top) and you'll see a yellow circle drawn on a red background and hear a sound being played. This is all done using Javascript and we're going to see some variables in use here.
+Press 'Preview' (right most menu at the top) or **[Click here](open_preview index.html)** and you'll see a yellow circle drawn on a red background and hear a sound being played. This is all done using Javascript and we're going to see some variables in use here.
 
 Variables are one of the fundamental things in any programming language. so let's figure out what they do and why.
 
@@ -118,8 +123,16 @@ There are a couple of variable naming conventions you can use. You should choose
 
 ---
 title: A bit more ...
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: example.js
+    action: open
+    panel: 0
+    ref: "var paper = Raphael(100, 50, width, height);"
+    lineCount: 1
+editable: true
 layout: ""
 
 ---
@@ -161,7 +174,11 @@ Feel free to modify some of the variable values and see what effect it has. Once
 If you mess things up, press the 'Variables' button again from the ![](.guides/img/rocket.png) Rocket menu and it will restore your code.
 ---
 title: Comments
-files: []
+files:
+  - path: example.js
+    action: open
+    ref: "// Create a canvas x=50 and y=10, 400 side and 300 high"
+    lineCount: 0
 editable: true
 layout: ""
 
@@ -187,8 +204,13 @@ and ending with this one
 ```
 ---
 title: Indenting your code
-files: []
-editable: false
+files:
+  - path: example.js
+    action: open
+    panel: 0
+    ref: var width=400;
+    lineCount: 3
+editable: true
 layout: ""
 
 ---
@@ -213,7 +235,10 @@ which should be formatted like this
 With most code editors, you would use the tab key to indent rather than spaces, although both are acceptable.  It's up to you but you would normally choose 2 (the author's preference) or 4 spaces per tab indent.
 ---
 title: Variable Arithmetic
-files: []
+files:
+  - path: "#all"
+    action: close
+    ref: ""
 editable: false
 layout: ""
 
@@ -337,8 +362,12 @@ You could have defined Pi as a variable instead and it would work in exactly the
 
 ---
 title: Play Time
-files: []
-editable: false
+files:
+  - path: "#cmd: bash .guides/restore.sh 02-varplay, example.js"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---

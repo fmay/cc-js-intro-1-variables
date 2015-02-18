@@ -1,48 +1,46 @@
 ---
 title: "VARIABLES & CONSTANTS"
 files: []
-editable: true
 layout: 2-panels-tree
 
 ---
-#'Forking' this module
+# 'Forking' this module
 If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
 
 To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
 
-#A few words about the Codio Guide
+# A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
 
 If you've already read this in another Guide then skip to the next section.
 
 ![](.guides/img/guides-helper.jpg)
 
-#The File Tree
+# The File Tree
 The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
 
-#About the Codio Guide
+# About the Codio Guide
 The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
 
 - if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
 - you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
 - you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
 
-#The Rocket Menu
+# The Rocket Menu
 The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
 
 You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
 
-#Previewing
+# Previewing
 The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
 
-#Code Tabs
+# Code Tabs
 When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
 
 
 ---
 title: Introduction
 files: []
-editable: false
 layout: ""
 
 ---
@@ -56,7 +54,6 @@ files:
     panel: 0
     ref: ""
     lineCount: 0
-editable: true
 layout: ""
 
 ---
@@ -72,7 +69,6 @@ files:
     panel: 0
     ref: " // Create a canvas x=50 and y=10, 400 side and 300 high"
     lineCount: 13
-editable: true
 layout: ""
 
 ---
@@ -99,12 +95,12 @@ Look at the `example.js` and let's see some variables in use.
 
 ```
 
-##Creating variables
+## Creating variables
 Let's just look at the first 3 lines. We start off by defining 3 variables (width, height and circleColor) using `var` and then assign initial values to each of them (400, 300 and the [color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Values) #fff000).
 
 You could have used more or less any name under the sun rather than width or height but it obviously makes sense to choose a name that relates to what it is being used for.
 
-##Choosing names for variables
+## Choosing names for variables
 Your variable names ...
 
 - may *not* have spaces in the name (`box width` would be invalid).
@@ -113,7 +109,7 @@ Your variable names ...
 - they may not *start* with a number but *may* contain numbers (`1color` is not valid, but `color1` is valid).
 - they may contain the '_' character (`color_1`, for example).
 
-##Naming conventions
+## Naming conventions
 There are a couple of variable naming conventions you can use. You should choose one and then stick to it so you have consistency.
 
 `circleColor` is my personal favorite, where the first word is lower case and the other words (if there are any) have their first character upper cased.
@@ -132,11 +128,10 @@ files:
     panel: 0
     ref: "var paper = Raphael(100, 50, width, height);"
     lineCount: 1
-editable: true
 layout: ""
 
 ---
-##Using variables
+## Using variables
 Now look at the above code example again and look at where the variables `width` and `height` are actually used.
 
 You can see that they have been used 
@@ -163,12 +158,12 @@ var rect = paper.rect(0, 0, width, height);
 
 Now, imagine you wanted to change the width and the height. Rather than having to change both lines, or potentially lots of lines where width and height might be used, we can simply alter the variable and wherever that variable is used, those values will be applied.
 
-##Always declare variables with `var`
+## Always declare variables with `var`
 It is very important that you declare your variables with `var`. You will discover that things still work if you use a variable without first declaring it, but this will create a *global* variable rather than a *local* variable. 
 
-We'll go into this in more detail in anotehr module, but a global variable can be used in any functions and keeps its value whereas a local variable only exists within the function you are in and will lose its data when the function temrinates.
+We'll go into this in more detail in another module, but a global variable can be used in any functions and keeps its value whereas a local variable only exists within the function you are in and will lose its data when the function temrinates.
 
-##Change some variable values
+## Change some variable values
 Feel free to modify some of the variable values and see what effect it has. Once you have changed them, switch back to the Preview tab on the left, or press the Preview button again.
 
 If you mess things up, press the 'Variables' button again from the ![](.guides/img/rocket.png) Rocket menu and it will restore your code.
@@ -179,7 +174,6 @@ files:
     action: open
     ref: "// Create a canvas x=50 and y=10, 400 side and 300 high"
     lineCount: 0
-editable: true
 layout: ""
 
 ---
@@ -210,7 +204,6 @@ files:
     panel: 0
     ref: var width=400;
     lineCount: 3
-editable: true
 layout: ""
 
 ---
@@ -239,13 +232,12 @@ files:
   - path: "#all"
     action: close
     ref: ""
-editable: false
 layout: ""
 
 ---
 Variable arithmetic is easy to understand. Here are some simple examples. Note the slightly different ways we are defining and initializing the variables.
 
-##Addition
+## Addition
 ```
 var x;
 var y=20;
@@ -262,7 +254,7 @@ var z;
 z = x-y;
 ```
 
-##Multiplication
+## Multiplication
 ```
 var x=10;
 var y=2;
@@ -271,7 +263,7 @@ var z;
 z = x*y;
 ```
 
-##Division
+## Division
 ```
 var x=10;
 var y=2;
@@ -284,7 +276,6 @@ There are also other types of variable arithmetic we can do but this will do for
 ---
 title: Expressions with parentheses
 files: []
-editable: false
 layout: ""
 
 ---
@@ -302,7 +293,6 @@ The following two expressions obviously give differents results
 ---
 title: String variables
 files: []
-editable: false
 layout: ""
 
 ---
@@ -313,7 +303,7 @@ var myName="Freddy";
 var wifeName='Jessica';
 ```
 
-##String arithmetic
+## String arithmetic
 As with number arithmetic, you can perform string arithmetic.
 
 ```
@@ -326,7 +316,6 @@ gooeyString=myName+' loves '+wifeName;
 ---
 title: Boolean Variables
 files: []
-editable: false
 layout: ""
 
 ---
@@ -342,7 +331,6 @@ It's as simple as that. Programs are full of cases where you need to check wheth
 ---
 title: Constants
 files: []
-editable: false
 layout: ""
 
 ---
@@ -367,7 +355,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -379,7 +366,7 @@ Go ahead a experiment with defining variables and performing some variable arith
 
 Add your own variables and expressions. Don't be timid about hacking the example around as much as you like.
 
-##Display stuff in the Preview window
+## Display stuff in the Preview window
 To display text in the Preview window, you use the `document.write()` function. You put whatever it is you want to display inside the `()`.
 
 You will see, however, that *literal* text should be enclosed in single or double quotes. Look at `example.js` to see it in use (make sure you have selected 'Play' from the Rocket menu).
@@ -391,12 +378,12 @@ document.write("Area is " + area + "<br/>");
 ```
 
 
-##Writing to the 'Document' is HTML
+## Writing to the 'Document' is HTML
 In our default examples, you will notice that the content you write to the *document* (the browser page) is nothing other than HTML. 
 
 You can see how we can include any valid HTML we wish and it applies exactly as it would had it been written inside an HTML file such as `index.html`.
 
-Remembering the earlier CSS modules, it should be clear that you could style your output in the same way using a CSS file. If you want to try this, you could add a `main.css` and then link to it by adding the following line to the <head> section of `index.html`.
+Remembering the earlier CSS modules, it should be clear that you could style your output in the same way using a CSS file. If you want to try this, you could add a `main.css` and then link to it by adding the following line to the `<head>` section of `index.html`.
 
 ```
   <link rel="stylesheet" type="text/css" href="./main.css">
